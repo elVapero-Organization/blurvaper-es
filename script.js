@@ -121,7 +121,7 @@ document.addEventListener("keydown", (e) => {
 
 // city div
 const city = document.getElementById("city");
-const cont = document.querySelectorAll(".foot-cont-three a");
+const cont = document.querySelectorAll(".foot-cont-three span");
 city.addEventListener("click", toggleCont);
 function toggleCont() {
   city.classList.toggle("active");

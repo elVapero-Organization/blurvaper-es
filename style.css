@@ -453,7 +453,7 @@ footer svg {
 .foot-cont-three p.active::after {
   transform: translateY(-50%) rotate(180deg);
 }
-.foot-cont-three a {
+.foot-cont-three span {
   display: none;
 }
 .social {
@@ -572,7 +572,7 @@ a {
     transition: all 0.8s ease-in-out;
     top: -30%;
   }
-  .products h1 {
+  .products h3 {
     font-size: 24px;
   }
   .products span {
@@ -641,6 +641,171 @@ a {
   .products button {
     padding: 20px 30px;
     font-size: 16px;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-intro {
+  padding: 70px 100px 0;
+  text-align: center;
+}
+
+.main-title {
+  color: #001bb7;
+  font-weight: 900;
+  font-size: clamp(1.6rem, 3vw, 2.6rem);
+  margin-bottom: 12px;
+}
+
+.main-subtitle {
+  color: #2d2d2d;
+  font-weight: 700;
+  font-size: clamp(1rem, 1.6vw, 1.25rem);
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.seo-info-section,
+.comparison-section,
+.geo-seo,
+.faq-seo {
+  padding: 70px 100px;
+}
+
+.section-header h2,
+.geo-seo h2,
+.faq-seo h2 {
+  color: #001bb7;
+  font-size: clamp(1.3rem, 2.2vw, 2rem);
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.section-header p,
+.geo-seo p {
+  color: #2d2d2d;
+  font-weight: 700;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.seo-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.seo-info-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 18px 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.seo-info-card h3 {
+  color: #001bb7;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+
+.seo-info-card p {
+  color: #2d2d2d;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.comparison-table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  font-weight: 700;
+  color: #2d2d2d;
+}
+
+.comparison-table th {
+  background: rgba(0, 27, 183, 0.08);
+  color: #001bb7;
+  font-weight: 900;
+}
+
+.geo-cities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.geo-cities span {
+  background: rgba(0, 27, 183, 0.08);
+  color: #001bb7;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-weight: 900;
+  font-size: 0.95rem;
+}
+
+.faq-item {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 14px 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  margin-bottom: 12px;
+}
+
+.faq-item summary {
+  cursor: pointer;
+  font-weight: 900;
+  color: #001bb7;
+}
+
+.faq-item p {
+  margin-top: 10px;
+  color: #2d2d2d;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+.foot-cont-three span {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+@media (min-width: 320px) and (max-width: 760px) {
+  .main-intro,
+  .seo-info-section,
+  .comparison-section,
+  .geo-seo,
+  .faq-seo {
+    padding: 40px 15px;
+  }
+
+  .seo-info-grid {
+    grid-template-columns: 1fr;
   }
 }
 @media (min-width: 760px) and (max-width: 1760px) {
